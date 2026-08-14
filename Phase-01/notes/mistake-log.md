@@ -50,6 +50,7 @@
    Therefore the correct condition is :
    w % 2 == 1 || w == 2
 ==================================================================================
+<!-- ///////////////////////////////////////Problem 2 ////////////////////////// -->
 1. Problem Name 
   A. way Too long words 
 
@@ -134,3 +135,78 @@ before thinking about the problem logic.
 
 Compilation Error means the program cannot
 compile, so I should fix the syntax first.
+
+==================================================================================
+<!-- /////////////////////////////////////////Problem 3 ////////////////////// -->
+A. Team 
+1. Problem Name
+A. Team
+
+2. Link
+https://codeforces.com/problemset/problem/231/A
+
+3. Initial Approach
+I stored the answers of the three friends for each problem
+in a 2D array.
+
+Then I calculated the sum of the three answers.
+
+If the sum is greater than or equal to 2,
+I increased the count.
+
+Finally, I printed the count.
+
+4. Mistake
+There is no logical mistake in the solution.
+
+The condition:
+sum >= 2
+
+is correct because the problem should be solved
+when at least two friends are sure about the solution.
+
+5. Breaking Test Case
+No breaking test case.
+
+The solution works correctly for the given requirements.
+
+Example:
+
+Input:
+3
+1 1 0
+1 1 1
+1 0 0
+
+Expected Output:
+2
+
+The program counts:
+- First problem → 2 → count = 1
+- Second problem → 3 → count = 2
+- Third problem → 1 → ignore
+
+Final answer:
+2
+
+6. Correct Approach
+For every problem:
+
+1. Read the three values.
+2. Calculate their sum.
+3. If sum >= 2, increase count.
+4. Print count.
+
+7. Complexity
+Time Complexity: O(n)
+
+Space Complexity: O(n)
+
+8. What I Learned
+I learned that I can solve the problem by counting
+how many friends are sure about the solution.
+
+If at least two friends are sure:
+sum >= 2
+
+Then the problem should be counted.
